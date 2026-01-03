@@ -15,3 +15,13 @@ Após ter utilizado o vite para criar o projeto
 Foram excluidos os arquivos eslints para impedir que não haja erros de compilação onde a compilação é muito rigorosa
 
 Iremos utilizar o React-router (consultar Docs)
+
+instalar: npm i react-router
+
+
+Adicionamos BrowserRouter (Contexto - Ele funciona como provedor de dados e funcionalidade de roteamento - Quando envolve um componente como App ele consegue ver todas as rotas daquela aplicação)
+
+## Criando a primeira rota
+
+Criação do arquivo /src/pages - páginas aplicação
+Criação do arquivo /src/router - para Definir cada rota da nossa aplicação
