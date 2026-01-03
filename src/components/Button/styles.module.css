@@ -1,0 +1,46 @@
+.button {
+    padding: 6px 15px;
+    
+    border-radius: 10px;
+    border: 0px;
+
+    font-size: 16px;
+    font-family:inter-normal;
+
+    transform: filter 0.2s;
+    transition: 0.5s ease;
+}
+
+.button:hover {
+    filter:brightness(1.2);
+    
+    transition: 0.9s;
+}
+
+
+
+.default {
+    background-color: #01DF83;
+    color: #020F0E;
+
+}
+
+.default:active {
+    background-color: #020F0E;
+    color: #01DF83;
+    transition: 0.05s;
+}
+
+.black {
+    background-color: #020F0E;
+    color: #f1fdd1;
+    
+}
+
+.black:active {
+    background-color: #f1fdd1;
+    color: #020F0E;
+    transition: 0.05s;
+}
+
+
