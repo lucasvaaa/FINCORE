@@ -11,8 +11,8 @@ export function HeaderHome() {
             <div className= {styles.headerHome}>
                 <img src={logo} alt="LOGO BRANCO" />
                 <div className= {styles.contentButtons}>
-                    <Button title='Cadastrar-se'/>
-                    <Button title='Login' color='black' />
+                    <Button title='Cadastrar-se' to='/cadastro'/>
+                    <Button title='Login' color='black' to='/login' />
                 </div>
             </div>
 
