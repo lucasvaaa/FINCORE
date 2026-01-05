@@ -1,3 +1,5 @@
+
+
 .headerHome {
     display: flex;
     margin:  10px 16px ;
@@ -20,7 +22,7 @@
 .contentMain {
     display: flex;
     gap: 56px;
-
+    height: 810px;
     position: relative;
     justify-content: center;
 }

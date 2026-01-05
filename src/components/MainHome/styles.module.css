@@ -1,0 +1,176 @@
+
+
+.mainHome {
+    width: 100%;
+    height: 1024px;
+    background-color: #d9d9d9;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+/*Conteúdo da primeira DIV*/
+
+
+.contendOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 547px;
+    width: 1408px;
+
+    margin: 16px 16px 0 16px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+
+    color: #efefef;
+
+    text-transform: uppercase;
+
+    position: relative;
+    
+    overflow: hidden;
+    
+}
+
+
+.textOne {
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 607px;
+    height: 140px;
+    gap: 20px;
+
+    position: absolute;
+    left: 99px;
+    top:155px;
+
+
+    z-index: 3;
+
+    font-size: 20px;
+    
+}
+
+.span {
+    color: #f1fdd1;
+}
+
+
+.fincorefundo {
+    position: absolute;
+    z-index: 1;
+    bottom: -10px;
+    width: 1475.3px;
+    height: auto;
+    
+}
+
+
+.pattern {
+    position: absolute;
+    z-index: 2;
+    
+    right: 0;
+
+}
+
+
+/* Conteúdo da segunda DIV*/
+
+
+
+.contendTwo {
+    position: relative;
+
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+    margin: 16px;
+    background-color: #020f0e;
+    border-radius: 28px;
+
+    height: 394px;
+    width: 1408px;
+
+    text-transform: uppercase;
+    color: #f1fdd1;
+
+    
+}
+
+
+
+.textTwo {
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  gap: 8px 5px;
+  align-items: start;
+  width: max-content;
+
+  position: absolute;
+
+    left: 99px;
+    top:165px;
+
+}
+
+
+.small {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+}
+
+
+.textRight {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+}
+
+
+.textBottom {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/*Conteúdo terceira div*/
+
+.textThree {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.fBlur {
+    margin-bottom: 2rem;
+}
+
+/* Conteúdo 4 */
+
+.textFour {
+    text-align: end;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+    right: 99px;
+    top:150px;
+
+}
