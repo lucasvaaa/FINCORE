@@ -10,24 +10,12 @@ import graf from '../../assets/grafico visual.svg'
 
 
 
-import { useState } from 'react'
-
 import { Footer } from '../../components/Footer'
 
 
 
 export function Dashboard () {
-    const [mostrarNumeros, setMostrarNumeros] = useState<boolean>(true);
-    
 
-    function toggleNumeros() {
-        setMostrarNumeros(prev => !prev);}
-
-    function mask(valor:string) {
-        return '*'.repeat(valor.length)
-
-    }  
-    // Falta finalizar
 
 
     return (
@@ -46,7 +34,7 @@ export function Dashboard () {
                     </div>
                 </div>
                 <div className={styles.EyesNdConfig}>
-                    <button className={styles.buttonEyesNCfg} onClick={toggleNumeros}>
+                    <button className={styles.buttonEyesNCfg} >
                         <img className={styles.eyesNCfg} src={eyes} alt="eyes" />
             
                     </button>
