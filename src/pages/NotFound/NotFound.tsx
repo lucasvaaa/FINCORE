@@ -4,8 +4,10 @@ export function NotFound () {
     return (
         <div className={styles.main}>
             <div className={styles.texts}>
-                <h2>NOT FOUND</h2>
-                <h2 className={styles.green}>PAGE 404</h2>
+                <h2 className={styles.h2}>
+                    NOT FOUND <br /><span className={styles.green}>PAGE 404</span>
+                </h2>
+                
             </div>
         </div>
     
