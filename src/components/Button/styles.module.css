@@ -43,4 +43,15 @@
     transition: 0.05s;
 }
 
+.dark {
+    background-color: transparent; /*não mostrar bg*/
+    color: #f1fdd1;
+    
+}
+
+.dark:active {
+    transition: 0.05s;
+}
+
+
 

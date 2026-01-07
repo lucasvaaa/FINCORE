@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router'
 
 
 type Props = React.ComponentProps<'button'> & {
-    title:string
-    color?: 'default' | 'black'
+    title:React.ReactNode
+    color?: 'default' | 'black' | 'dark' 
     to?: string
     delay?: number
 
@@ -13,6 +13,17 @@ type Props = React.ComponentProps<'button'> & {
 
 export function Button({title, color='default',to, delay, ...rest}:Props, ) {
     const navigate = useNavigate()
+
+    const colorVariants = {
+      default: styles.default,
+      black: styles.black,
+      dark:styles.dark
+    }
+
+
+    
+
+
 
     function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
       
@@ -29,12 +40,13 @@ export function Button({title, color='default',to, delay, ...rest}:Props, ) {
         <button
         type="button"
         onClick={handleClick}
-        className={`${styles.button} ${
-        color === 'default' ? styles.default : styles.black
-      }`}
+        className={`${styles.button} ${colorVariants[color??'default']}`}
         {...rest}>
             {title}
         
         </button>         
     )
 } 
+
+
+

@@ -10,13 +10,18 @@
     justify-content: space-between;
     height: max-content;
 
-    border-bottom: 1px solid #163532;
-    background-color: #000;
     position: sticky;
     top: 0;
     z-index: 100;
   
+    /* estilização */
+
+    background: rgba(0, 0, 0, 0.6); /* precisa ser translúcido */
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(22, 53, 50, 0.2);
 }
+
 
 .contentButtons {
     display: flex;

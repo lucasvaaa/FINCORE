@@ -9,7 +9,8 @@ export function HeaderHome() {
     return (
         <div>
             <div className= {styles.headerHome}>
-                <img className= {styles.logobranco}src={logo} alt="LOGO BRANCO" />
+                
+                <Button title={<img className={styles.logobranco} src={logo} alt="LOGO BRANCO"/>} color='dark' to='/' />
                 <div className= {styles.contentButtons}>
                     <Button title='Cadastrar-se' to='/cadastro'/>
                     <Button title='Login' color='black' to='/login' />
