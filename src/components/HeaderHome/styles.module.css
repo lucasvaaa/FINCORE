@@ -1,15 +1,20 @@
 
-
 .headerHome {
+
+
     display: flex;
     margin:  10px 16px ;
     padding: 16px 100px;
 
     align-items: center;
     justify-content: space-between;
-    height: 100%;
+    height: max-content;
 
     border-bottom: 1px solid #163532;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
   
 }
 
@@ -23,6 +28,7 @@
     display: flex;
     gap: 56px;
     height: 810px;
+    width: 100%;
     position: relative;
     justify-content: center;
 }
@@ -75,4 +81,16 @@
     color: #efefef;
     width: 417px;
     text-align: start;
+}
+
+.logobranco {
+    cursor: pointer;
+    transform: filter 0.2s;
+    transition: 0.5s ease;
+}
+
+.logobranco:hover {
+    filter:brightness(0.8);
+    
+    transition: 0.5s;
 }

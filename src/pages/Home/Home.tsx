@@ -7,9 +7,11 @@ import styles from './styles.module.css'
 export function Home() {
     return (
         <div className={styles.contend}>
-            <div><HeaderHome/></div>
-            <div><MainHome/></div>
-            <div><Footer/></div>
+            
+            
+            <div className={styles.headerhome}><HeaderHome/></div>
+            <div className={styles.mainhome}><MainHome/></div>
+            <div className={styles.footer}><Footer/></div>
         </div>
 
     )
