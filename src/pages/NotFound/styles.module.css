@@ -1,0 +1,19 @@
+.main {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: inter-normal;
+}
+
+.green {
+    color: #01DF83;
+}

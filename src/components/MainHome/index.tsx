@@ -12,7 +12,7 @@ export function MainHome () {
             <div className= {styles.contendOne}>
                 
                     <div className={styles.textOne}>
-                        <h2>Transformamos dados dispersos <br /> e  processos manuais <span className={styles.span}>em informação <br /> confiável, rastreável e acionável.</span></h2>
+                        <h2 className={styles.textparagrafo}>Transformamos dados dispersos <br /> e  processos manuais <span className={styles.span}>em informação <br /> confiável, rastreável e acionável.</span></h2>
                         <Button title='Quero Facilitar meu Trabalho' to='/cadastro'/>
                     </div>
 
