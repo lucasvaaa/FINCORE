@@ -1,6 +1,6 @@
 import './styles.module.css'
-import { Button } from '../Button'
-import theme from '../../assets/theme.svg'
+import { Button } from '@/components/Button'
+import theme from '@/assets/theme.svg'
 
 export function ThemeButton () {
     return (

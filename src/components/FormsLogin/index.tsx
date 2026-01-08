@@ -1,5 +1,6 @@
 import styles from './styles.module.css'
-import { Button } from '../Button'
+
+import { Button } from '@/components/Button'
 
 export function FormsLogin() {
     return (

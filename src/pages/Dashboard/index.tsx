@@ -1,16 +1,14 @@
 import styles from './styles.module.css'
 
-import flogo from '../../assets/FLogo.svg'
-import eyes from '../../assets/Eye.svg'
-import cifron from '../../assets/cifron.svg'
-
-import aba from '../../assets/aba.svg'
-import graf from '../../assets/grafico visual.svg'
-import { ThemeButton } from '../../components/ThemeButton'
+import flogo from '@/assets/FLogo.svg'
+import eyes from '@/assets/Eye.svg'
+import cifron from '@/assets/cifron.svg'
+import aba from '@/assets/aba.svg'
+import graf from '@/assets/grafico visual.svg'
 
 
-
-import { Footer } from '../../components/Footer'
+import { ThemeButton } from '@/components/ThemeButton'
+import { Footer } from '@/components/Footer'
 
 
 

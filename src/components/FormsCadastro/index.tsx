@@ -1,6 +1,7 @@
 import styles from './styles.module.css'
-import { InputAuth } from '../InputAuth'
-import { Button } from '../Button'
+
+import { InputAuth } from '@/components/InputAuth'
+import { Button } from '@/components/Button'
 
 export function FormsCadastro() {
     return (

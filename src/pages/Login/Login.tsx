@@ -1,6 +1,7 @@
-import { ImagemAuth } from '../../components/ImagemAuth'
 import styles from './styles.module.css'
-import { FormsLogin } from '../../components/FormsLogin'
+
+import { ImagemAuth } from '@/components/ImagemAuth'
+import { FormsLogin } from '@/components/FormsLogin'
 
 export function Login () {
     return (

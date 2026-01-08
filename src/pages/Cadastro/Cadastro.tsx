@@ -1,6 +1,7 @@
-import { ImagemAuth } from '../../components/ImagemAuth'
 import styles from './styles.module.css'
-import { FormsCadastro } from '../../components/FormsCadastro'
+
+import { ImagemAuth } from '@/components/ImagemAuth'
+import { FormsCadastro } from '@/components/FormsCadastro'
 
 export function Cadastro () {
     return (

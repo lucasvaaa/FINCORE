@@ -1,10 +1,13 @@
-import logo from '../../assets/Fincore-Branco.svg'
-import f3d from '../../assets/F3D.png'
-import fincoreBg from '../../assets/FINCORE BG.svg'
 import styles from './styles.module.css'
+
+import logo from '@/assets/Fincore-Branco.svg'
+import f3d from '@/assets/F3D.png'
+import fincoreBg from '@/assets/FINCORE BG.svg'
+
 
 import { ThemeButton } from '../ThemeButton'
 import { Button } from '../Button'
+
 
 export function HeaderHome() {
     return (

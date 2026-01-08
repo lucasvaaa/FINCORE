@@ -1,10 +1,10 @@
 import styles from './styles.module.css'
 import { Button } from '../Button'
 
-import fincorefundo from '../../assets/FINCORE BG.svg'
-import pattern from '../../assets/pattern.svg'
-import fincore from '../../assets/FINCORE SMALL.svg'
-import fincoreblur from '../../assets/F3DBLUR.png'
+import fincorefundo from '@/assets/FINCORE BG.svg'
+import pattern from '@/assets/pattern.svg'
+import fincore from '@/assets/FINCORE SMALL.svg'
+import fincoreblur from '@/assets/F3DBLUR.png'
 
 export function MainHome () {
     return (
