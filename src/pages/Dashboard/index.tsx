@@ -2,7 +2,6 @@ import styles from './styles.module.css'
 
 import flogo from '../../assets/FLogo.svg'
 import eyes from '../../assets/Eye.svg'
-import theme from '../../assets/theme.svg'
 import cifron from '../../assets/cifron.svg'
 
 import aba from '../../assets/aba.svg'
@@ -40,7 +39,7 @@ export function Dashboard () {
             
                     </button>
             
-                    <ThemeButton/>''
+                    <ThemeButton/>
                 </div>
             </div>
 
