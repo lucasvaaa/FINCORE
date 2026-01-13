@@ -5,7 +5,6 @@ import f3d from '@/assets/F3D.png'
 import fincoreBg from '@/assets/FINCORE BG.svg'
 
 
-import { ThemeButton } from '../ThemeButton'
 import { Button } from '../Button'
 
 
@@ -18,7 +17,7 @@ export function HeaderHome() {
                 <div className= {styles.contentButtons}>
                     <Button title='Cadastrar-se' to='/cadastro'/>
                     <Button title='Login' color='black' to='/login' />
-                    <ThemeButton/>
+                    
                 </div>
             </div>
 

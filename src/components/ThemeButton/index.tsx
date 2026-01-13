@@ -1,17 +1,22 @@
-import './styles.module.css'
 import { Button } from '@/components/Button'
-import theme from '@/assets/theme.svg'
+import { useDashboardTheme } from '@/pages/Dashboard/ThemeContext'
 
-export function ThemeButton () {
-    return (
-        <div>
-            <Button
-            title={
-                <img src={theme} alt="icon Theme" />}
-            color='dark'
+import themeDark from '@/assets/theme.svg'
+import themeLight from '@/assets/themeL.svg'
 
-            />
-            
-        </div>
-    )
+export function ThemeButton() {
+  const { isDark, toggleTheme } = useDashboardTheme()
+
+  const icon = isDark ? themeLight : themeDark
+
+  return (
+    <Button
+      onClick={toggleTheme}
+      title={<img src={icon} alt="Alterar tema" />}
+      color="dark"
+    />
+  )
 }
+
+
+

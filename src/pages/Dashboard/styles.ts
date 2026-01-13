@@ -1,32 +1,37 @@
+import styled from "styled-components";
 
 
-.dashboardPage {
+
+export const dashboardPage = styled.div`
     width: 100%;
     height: 100vh;
-}
+    background-color: ${({ theme }) => theme.colors.background};
+`;
+
+
  
  
  /*  Menu Div */
-.menuDiv {
+export const menuDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0px 40px 60px 40px;
     padding-top:32px ;
+    
 
-}
+`
 
-.infoInit {
+export const infoInit = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     gap: 16px;
 
-}
-.flogoDiv {
+`
+export const flogoDiv= styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +44,9 @@
 
     border-radius: 8px;
     padding: 15px 16px;
-} /*MU*/
+` /*MU*/
 
-.infoClient {
+export const infoClient = styled.div`
     width: max-content;
     height: max-content;
     display: flex;
@@ -50,79 +55,78 @@
     align-items: flex-start;
     gap: 1px;
 
-}
+`
 
-.h3 {
-    color: #f1fdd1;
-}
-
-p {
-    color: #EFEFEF;
+export const p = styled.p `
+    color: ${({ theme }) => theme.colors.text};
     font-size: 12px;
-}
+`
 
 /* Menu Div > div2 */
 
-.EyesNdConfig {
+export const EyesNdConfig = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 43px;
-}
+`
 
-.buttonEyesNCfg {
+export const buttonEyesNCfg = styled.div `
     background-color: #000;
     border: none;
-}
+`
 
-.eyesNCfg {
+export const eyesNCfg = styled.div `
     cursor: pointer;
     transform: filter 0.2s;
     transition: 0.5s ease;
-}
 
-.eyesNCfg:hover {
-    filter:brightness(0.8);
+
+    &:hover {
+        filter:brightness(0.8);
     
-    transition: 0.5s;
-}
+        transition: 0.5s;
+    }
+`
+
+
 
 /* Main Menu Dashboard */
 
-/* .main {
+/* .main `
     
-} */
+` */
 
-.dashboardName {
+export const dashboardName = styled.div`
     display: flex;
     margin-left: 100px;
     padding: 10px;
-}
+`
 
-.cards {
+export const cards= styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     margin: 20px;
-}
+`
 
-.cardFinance {
+export const cardFinance = styled.div`
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    background-color: #22252C;
+    background-color: ${({theme})=> theme.colors.card};
     width: 392.55px;
     height: 135.32px;
     border-radius: 17px;
     padding: 16px;
     gap: 32px;
 
-}
-.cardFinanceOne {
+`
+export const cardFinanceOne = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -131,21 +135,21 @@ p {
     padding:0 16px;
     
 
-}
+`
 
-.cardFinanceSandP {
+export const cardFinanceSandP = styled.div`
     display: flex;
     flex-direction: row;
     gap: 11px;
     font-size: 12px;
     color: #f1fdd1;
-}
+`
 
-.aba {
-    height:8px
-}
+export const aba = styled.div`
+    height:8px;
+`
 
-.cardFinanceTwo {
+export const cardFinanceTwo = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -155,40 +159,40 @@ p {
     
     
     align-items: flex-end;
-}
+`
 
-.moedaNValue {
+export const moedaNValue = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     width: 350px; /*IMPORTANTE MUDAR DEPOIS
     */
-}
+`
 
-.moeda {
+export const moeda = styled.div`
     font-size: 12px;
-}
+`
 
-.value {
+export const value = styled.div`
     font-size: 2rem;
-}
+`
 
-.indicador{
+export const indicador= styled.div`
     color: #01DF83;
     font-size: 20px;
     font-family: inter-light;
-}
+`
 
-.indicadorN {
+export const indicadorN = styled.div`
     color: #e30606;
     font-size: 20px;
     font-family: inter-light;
-}
+`
 
 /* GRÁFICO */
 
-.grafico {
+export const grafico = styled.div`
     width: 1408;
     height: max-content;
     display: flex;
@@ -200,10 +204,24 @@ p {
     border-radius: 40px;
     padding: 50px;
 
-}
+`
 
-.titleCard{
+export const titleCard = styled.div`
     width: max-content;
     padding: 1rem;
 
-}
+`
+export const title = styled.h3 `
+    color: ${({ theme }) => theme.colors.text};
+
+`
+
+export const PageWrapper = styled.html`
+  min-height: 100vh;
+  width: 100%;
+  background-color: ${({ theme }) => theme.colors.background};
+`;
+
+export const h1 =  styled.h1 `
+    color: ${({ theme }) => theme.colors.text};
+`
