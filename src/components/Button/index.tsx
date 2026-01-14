@@ -12,7 +12,7 @@ type Props = React.ComponentProps<'button'> & {
     
 }
 
-export function Button({title, color='default',to, delay, ...rest}:Props, ) {
+export function Button({title, color='default',to, delay=300, ...rest}:Props ) {
     const navigate = useNavigate()
 
     const colorVariants = {
@@ -21,33 +21,29 @@ export function Button({title, color='default',to, delay, ...rest}:Props, ) {
       dark:styles.dark
     }
 
-
-    
-
-
-
     function handleClick(e: React.MouseEvent<HTMLButtonElement>) {
       
-
-      if (e.defaultPrevented || !to) return;
+      if (rest.onClick) {
+          rest.onClick(e)
+      }
+      if ( !to) return;
 
       setTimeout(() => {
         navigate(to);
-      }, 300);
+      }, delay);
     }
 
 
-    return (
-        <button
-        type="button"
-        onClick={handleClick}
-        className={`${styles.button} ${colorVariants[color??'default']}`}
-        {...rest}>
-            {title}
-        
-        </button>         
-    )
-} 
-
+  return (
+    <button
+      type="button"
+      onClick={handleClick}
+      className={`${styles.button} ${colorVariants[color]}`}
+      {...rest}
+    >
+      {title}
+    </button>
+  )
+}
 
 

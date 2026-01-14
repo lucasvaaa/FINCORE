@@ -4,11 +4,15 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router'
 
 import { AppRoutes } from './routes/AppRoutes'
+import { DashboardThemeProvider } from './pages/Dashboard/ThemeContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter> 
-      <AppRoutes />
-    </BrowserRouter>
+
+      <DashboardThemeProvider>
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </DashboardThemeProvider>
   </StrictMode>,
 )

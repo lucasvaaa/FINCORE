@@ -216,7 +216,7 @@ export const title = styled.h3 `
 
 `
 
-export const PageWrapper = styled.html`
+export const PageWrapper = styled.div`
   min-height: 100vh;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.background};

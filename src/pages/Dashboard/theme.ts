@@ -1,7 +1,7 @@
-import cifronL from '@/assets/cifronL.svg'
-import cifron from '@/assets/cifron.svg'
-import graf from '@/assets/grafico visual.svg'
-import grafL from '@/assets/grafico visualL.svg'
+// import cifronL from '@/assets/cifronL.svg'
+// import cifron from '@/assets/cifron.svg'
+// import graf from '@/assets/grafico visual.svg'
+// import grafL from '@/assets/grafico visualL.svg'
 
 
 
@@ -17,9 +17,10 @@ export const light = {
   },
 
   images: {
-    cifrao: cifronL,
-    graf: grafL
+    cifrao: new URL('@/assets/cifron.svg', import.meta.url).href,
+    graf: new URL('@/assets/grafico visual.svg', import.meta.url).href
   }
+
 }
 
 export const dark = {
@@ -30,9 +31,10 @@ export const dark = {
         card: '#fff',  
   },
   images: {
-    cifrao: cifron,
-    graf: graf
+    cifrao: new URL('@/assets/cifronL.svg', import.meta.url).href,
+    graf: new URL('@/assets/grafico visualL.svg', import.meta.url).href
   }
+
 }
 
-export type ThemeType = typeof light
+export type ThemeType = typeof dark

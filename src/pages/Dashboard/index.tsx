@@ -1,29 +1,32 @@
+
+import { useTheme } from 'styled-components'
+import { type ThemeType } from './theme'
 import styles from './styles.module.css'
 import * as S from "@/pages/Dashboard/styles"
 
 import flogo from '@/assets/FLogo.svg'
-import cifron from '@/assets/cifron.svg'
 import aba from '@/assets/aba.svg'
-import graf from '@/assets/grafico visual.svg'
 
 
 import { ThemeButton } from '@/components/ThemeButton'
 import { Footer } from '@/components/Footer'
 
-import { DashboardThemeProvider } from './ThemeContext'
+//import { DashboardThemeProvider } from './ThemeContext'
 
-import { useTheme } from 'styled-components'
-import { ThemeType } from './theme'
+
+
 
 
 export function Dashboard () {
     const theme = useTheme() as ThemeType
+    console.log('theme.images:', theme.images)
 
+    
 
     return (
         
 
-        <DashboardThemeProvider>
+        
             
             <S.PageWrapper>
                 <S.dashboardPage>
@@ -58,7 +61,9 @@ export function Dashboard () {
                             
                                 <div className={styles.cardFinanceOne}>
                                     <div className={styles.cardFinanceSandP}>
-                                        <img src={theme.images.cifrao} alt="Cifrão" />
+                                        <img src={theme.images?.cifrao} alt="Cifrão" />
+
+                                        
                                         
                                         <S.p>SALDO CONSOLIDADO</S.p>
                                     </div>
@@ -79,7 +84,7 @@ export function Dashboard () {
                         <div className={styles.cardFinance}>
                             <div className={styles.cardFinanceOne}>
                                 <div className={styles.cardFinanceSandP}>
-                                    <img src={cifron} alt="Cifrão" />
+                                    <img src={theme.images.cifrao} alt="Cifrão" />
                                     <p>RECEITA DO PERÍODO</p>
                                 </div>
                                 <img className={styles.aba} src={aba} alt="+" />
@@ -99,7 +104,7 @@ export function Dashboard () {
                         <div className={styles.cardFinance}>
                             <div className={styles.cardFinanceOne}>
                                 <div className={styles.cardFinanceSandP}>
-                                    <img src={cifron} alt="Cifrão" />
+                                    <img src={theme.images.cifrao} alt="Cifrão" />
                                     <p>DESPESAS DO PERÍODO</p>
                                 </div>
                                 <img className={styles.aba} src={aba} alt="+" />
@@ -122,11 +127,11 @@ export function Dashboard () {
                 
                         <div className={styles.titleCard}>
                             <div className={styles.cardFinanceSandP}>
-                                <img src={cifron} alt="Cifrão" />
+                                <img src={theme.images.cifrao} alt="Cifrão" />
                                 <p>FLUXO DE CAIXA</p>
                             </div>
                             <div>
-                            <img src={graf} alt="Gráfico" />
+                            <img src={theme.images.graf} alt="Gráfico" />
                             </div>
                         </div>
                 
@@ -134,6 +139,6 @@ export function Dashboard () {
                     <Footer/>
                 </S.dashboardPage>
             </S.PageWrapper>
-        </DashboardThemeProvider>
+        
     )
 }
