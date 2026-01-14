@@ -13,6 +13,8 @@ export const light = {
         background: '#000000ff',
         text: '#F1fdd1',
         card: '#22252C',
+        cardg: '#000000ff',
+        borderg: '#22252C'
         
   },
 
@@ -28,7 +30,9 @@ export const dark = {
     colors: {
         background: '#F1fdd1',
         text: '#163532',
-        card: '#fff',  
+        card: '#fff', 
+        cardg: '#fff',
+        borderg: '#F1fdd1'
   },
   images: {
     cifrao: new URL('@/assets/cifronL.svg', import.meta.url).href,

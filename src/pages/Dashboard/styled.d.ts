@@ -8,6 +8,8 @@ declare module 'styled-components' {
             background: string,
             text: string,
             card: string,
+            cardg: string,
+            borderg: string
         },
 
         images: {

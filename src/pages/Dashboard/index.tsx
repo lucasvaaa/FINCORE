@@ -19,7 +19,7 @@ import { Footer } from '@/components/Footer'
 
 export function Dashboard () {
     const theme = useTheme() as ThemeType
-    console.log('theme.images:', theme.images)
+    //console.log('theme.images:', theme.images)
 
     
 
@@ -61,18 +61,17 @@ export function Dashboard () {
                             
                                 <div className={styles.cardFinanceOne}>
                                     <div className={styles.cardFinanceSandP}>
-                                        <img src={theme.images?.cifrao} alt="Cifrão" />
 
-                                        
-                                        
+                                        <img src={theme.images?.cifrao} alt="Cifrão" />
                                         <S.p>SALDO CONSOLIDADO</S.p>
+
                                     </div>
                                     <img className={styles.aba} src={aba} alt="+" />
                                 </div>
                                 <div className={styles.cardFinanceTwo}>
                                     <div className={styles.moedaNValue}>
-                                        <p className={styles.moeda}>MOEDA BRASILEIRA</p>
-                                        <h2 className={styles.value}>R$ 19,023,093</h2>
+                                        <S.p>MOEDA BRASILEIRA</S.p>
+                                        <S.h2>R$ 19,023,093</S.h2>
                                     </div>
                                     <div className={styles.indicador}>
                                             <h4 className={styles.h4indic}>2.48%</h4>
@@ -81,61 +80,65 @@ export function Dashboard () {
                             
                         </S.cardFinance>
                         {/* card 2 */}
-                        <div className={styles.cardFinance}>
-                            <div className={styles.cardFinanceOne}>
-                                <div className={styles.cardFinanceSandP}>
-                                    <img src={theme.images.cifrao} alt="Cifrão" />
-                                    <p>RECEITA DO PERÍODO</p>
+
+
+                        <S.cardFinance>
+                            
+                                <div className={styles.cardFinanceOne}>
+                                    <div className={styles.cardFinanceSandP}>
+                                        <img src={theme.images.cifrao} alt="Cifrão" />
+                                        <S.p>RECEITA DO PERÍODO</S.p>
+                                    </div>
+                                    <img className={styles.aba} src={aba} alt="+" />
                                 </div>
-                                <img className={styles.aba} src={aba} alt="+" />
-                            </div>
-                            <div className={styles.cardFinanceTwo}>
-                                <div className={styles.moedaNValue}>
-                                    <p className={styles.moeda}>MOEDA BRASILEIRA</p>
-                                    <h2 className={styles.value}>R$ 1,023,093</h2>
+                                <div className={styles.cardFinanceTwo}>
+                                    <div className={styles.moedaNValue}>
+                                        <S.p>MOEDA BRASILEIRA</S.p>
+                                        <S.h2>R$ 1,023,093</S.h2>
+                                    </div>
+                                    <div className={styles.indicadorN}>
+                                            <h4 className={styles.h4indic}>-5.48%</h4>
+                                    </div>
                                 </div>
-                                <div className={styles.indicadorN}>
-                
-                                        <h4 className={styles.h4indic}>-5.48%</h4>
-                                </div>
-                            </div>
-                        </div>
+                        </S.cardFinance>
+                       
+
+
                         {/* card 3 */}
-                        <div className={styles.cardFinance}>
+                        <S.cardFinance>
                             <div className={styles.cardFinanceOne}>
                                 <div className={styles.cardFinanceSandP}>
                                     <img src={theme.images.cifrao} alt="Cifrão" />
-                                    <p>DESPESAS DO PERÍODO</p>
+                                    <S.p>DESPESAS DO PERÍODO</S.p>
                                 </div>
                                 <img className={styles.aba} src={aba} alt="+" />
                             </div>
                             <div className={styles.cardFinanceTwo}>
                                 <div className={styles.moedaNValue}>
-                                    <p className={styles.moeda}>MOEDA BRASILEIRA</p>
-                                    <h2 className={styles.value}>R$ 9,023,093</h2>
+                                        <S.p>MOEDA BRASILEIRA</S.p>
+                                        <S.h2>R$ 9,023,093</S.h2>
                                 </div>
                                 <div className={styles.indicador}>
                 
                                         <h4 className={styles.h4indic}>1.38%</h4>
                                 </div>
                             </div>
-                        </div>
+                        </S.cardFinance>
+
                     </div>
                 
                 {/*            GRÁFICO              */}
-                    <div className={styles.grafico}>
-                
-                        <div className={styles.titleCard}>
-                            <div className={styles.cardFinanceSandP}>
-                                <img src={theme.images.cifrao} alt="Cifrão" />
-                                <p>FLUXO DE CAIXA</p>
-                            </div>
-                            <div>
-                            <img src={theme.images.graf} alt="Gráfico" />
-                            </div>
+                <S.grafico>
+                    <div className={styles.titleCard}>
+                        <div className={styles.cardFinanceSandP}>
+                            <img src={theme.images.cifrao} alt="Cifrão" />
+                            <S.p>FLUXO DE CAIXA</S.p>
                         </div>
-                
+                        <div>
+                        <img src={theme.images.graf} alt="Gráfico" />
+                        </div>
                     </div>
+                </S.grafico>
                     <Footer/>
                 </S.dashboardPage>
             </S.PageWrapper>

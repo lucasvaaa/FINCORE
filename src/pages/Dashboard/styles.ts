@@ -199,7 +199,8 @@ export const grafico = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    border: 1px solid #22252C;
+    border: 1px solid ${({theme})=> theme.colors.borderg};
+    background-color: ${({theme})=> theme.colors.cardg};
     margin: 16px;
     border-radius: 40px;
     padding: 50px;
@@ -216,7 +217,7 @@ export const title = styled.h3 `
 
 `
 
-export const PageWrapper = styled.div`
+export const PageWrapper = styled.html`
   min-height: 100vh;
   width: 100%;
   background-color: ${({ theme }) => theme.colors.background};
@@ -224,4 +225,9 @@ export const PageWrapper = styled.div`
 
 export const h1 =  styled.h1 `
     color: ${({ theme }) => theme.colors.text};
+`
+
+export const h2 =  styled.h2 `
+    color: ${({ theme }) => theme.colors.text};
+    font-size: 2rem;
 `
